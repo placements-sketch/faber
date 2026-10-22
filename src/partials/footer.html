@@ -1,0 +1,42 @@
+<footer class="w-full bg-tertiary text-surface-container-lowest pt-space-2xl pb-space-xl">
+  <div class="w-full px-margin-mobile md:px-gutter max-w-7xl mx-auto flex flex-col gap-space-2xl">
+    <div class="grid grid-cols-1 md:grid-cols-12 gap-gutter">
+      <div class="md:col-span-5 flex flex-col gap-space-md">
+        <a class="flex items-center gap-space-sm" href="index.html">
+          <span class="p-space-xs bg-surface-container-lowest rounded"><img alt="" class="h-8 w-auto object-contain" loading="lazy" src="assets/img/logo.png" width="19" height="32"></span>
+          <span class="font-label-caps text-label-caps text-surface-container-lowest tracking-widest uppercase">{{name}}</span>
+        </a>
+        <p class="font-body-md text-body-md text-surface-dim max-w-md">World-class engineering and construction services in Kenya and beyond. Delivering enduring architectural masterworks grounded in uncompromising technical precision and permanent craft.</p>
+        <div class="flex items-center gap-space-xs"><span class="w-2 h-2 bg-secondary-fixed"></span><span class="font-code-meta text-code-meta text-surface-dim uppercase tracking-wider">NCA Certified Contractor · Category 1</span></div>
+      </div>
+      <nav class="md:col-span-3 flex flex-col gap-space-md" aria-label="Footer">
+        <h2 class="font-label-caps text-label-caps text-secondary-fixed tracking-widest uppercase">Navigation</h2>
+        <ul class="flex flex-col gap-space-sm">
+          <li class="font-body-sm text-body-sm"><a class="text-surface-dim hover:text-surface-container-lowest transition-colors" href="index.html">01 // Home Overview</a></li>
+          <li class="font-body-sm text-body-sm"><a class="text-surface-dim hover:text-surface-container-lowest transition-colors" href="about.html">02 // Practice &amp; Philosophy</a></li>
+          <li class="font-body-sm text-body-sm"><a class="text-surface-dim hover:text-surface-container-lowest transition-colors" href="services.html">03 // Engineering Services</a></li>
+          <li class="font-body-sm text-body-sm"><a class="text-surface-dim hover:text-surface-container-lowest transition-colors" href="projects.html">04 // Selected Works &amp; Portfolio</a></li>
+          <li class="font-body-sm text-body-sm"><a class="text-surface-dim hover:text-surface-container-lowest transition-colors" href="team.html">05 // Leadership &amp; Engineering Team</a></li>
+          <li class="font-body-sm text-body-sm"><a class="text-surface-dim hover:text-surface-container-lowest transition-colors" href="contact.html">06 // Consultations &amp; Enquiries</a></li>
+        </ul>
+      </nav>
+      <div class="md:col-span-4 flex flex-col gap-space-md">
+        <h2 class="font-label-caps text-label-caps text-secondary-fixed tracking-widest uppercase">Direct Operations</h2>
+        <address class="not-italic flex flex-col gap-space-sm font-body-sm text-body-sm text-surface-dim">
+          <span class="flex items-start gap-space-xs"><span class="material-symbols-outlined text-base text-secondary-fixed" aria-hidden="true">pin_drop</span><span>{{addressLine}}, {{city}}, {{country}}</span></span>
+          <span class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-base text-secondary-fixed" aria-hidden="true">call</span><a class="hover:text-surface-container-lowest transition-colors" href="tel:{{phoneHref}}">{{phone}}</a></span>
+          <span class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-base text-secondary-fixed" aria-hidden="true">mail</span><a class="hover:text-surface-container-lowest transition-colors break-all" href="mailto:{{email}}">{{email}}</a></span>
+          <span class="flex items-start gap-space-xs"><span class="material-symbols-outlined text-base text-secondary-fixed" aria-hidden="true">schedule</span><span>{{hoursWeekdays}}<br>{{hoursSaturday}}</span></span>
+        </address>
+      </div>
+    </div>
+    <div class="pt-space-md border-t border-surface-container-lowest/10 flex flex-col md:flex-row items-center justify-between gap-space-sm font-code-meta text-code-meta text-on-tertiary-container text-center md:text-left">
+      <p>© <span data-year>2026</span> {{name}}. All rights reserved.</p>
+      <ul class="flex flex-wrap items-center justify-center gap-x-space-md gap-y-space-xs">
+        <li><a class="hover:text-surface-container-lowest transition-colors" href="privacy.html">Privacy Policy</a></li>
+        <li><a class="hover:text-surface-container-lowest transition-colors" href="terms.html">Terms of Engagement</a></li>
+        <li><a class="hover:text-surface-container-lowest transition-colors" href="services.html#qhse">Health &amp; Safety Compliance</a></li>
+      </ul>
+    </div>
+  </div>
+</footer>

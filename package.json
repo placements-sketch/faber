@@ -1,0 +1,13 @@
+{
+  "name": "faber-projects-website",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Faber Projects Ltd — company website",
+  "scripts": {
+    "build": "node build.mjs",
+    "preview": "node build.mjs && python -m http.server 8080 --directory dist"
+  },
+  "devDependencies": {
+    "tailwindcss": "3.4.17"
+  }
+}

@@ -1,0 +1,27 @@
+<a class="skip-link px-4 py-2 bg-primary-container text-on-primary font-label-caps text-label-caps tracking-widest uppercase rounded" href="#main">Skip to content</a>
+<header class="fixed top-0 left-0 w-full z-50 bg-surface-container-low/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]">
+  <div class="h-20 w-full px-margin-mobile md:px-gutter flex items-center justify-between gap-space-md">
+    <a class="flex items-center gap-space-sm shrink-0" href="index.html" aria-label="{{name}} — Home">
+      <span class="p-space-xs bg-surface-container-highest rounded"><img alt="" class="h-11 w-auto object-contain" src="assets/img/logo.png" width="26" height="44"></span>
+      <span class="flex flex-col">
+        <span class="font-label-caps text-label-caps text-primary tracking-widest uppercase">{{shortName}}</span>
+        <span class="font-code-meta text-code-meta text-outline tracking-wider uppercase hidden sm:block">{{tagline}}</span>
+      </span>
+    </a>
+    <nav class="hidden lg:flex items-center gap-space-lg" aria-label="Main">
+{{navDesktop}}
+    </nav>
+    <div class="flex items-center gap-space-sm">
+      <a class="hidden sm:inline-flex items-center justify-center px-space-md py-space-xs bg-primary-container text-on-primary font-label-caps text-label-caps tracking-widest uppercase rounded-full hover:bg-primary transition-all" href="contact.html"><span class="mr-2">Get in touch</span><span class="material-symbols-outlined text-sm" aria-hidden="true">north_east</span></a>
+      <button class="lg:hidden inline-flex items-center justify-center w-11 h-11 rounded text-primary hover:bg-surface-container-high transition-colors" type="button" aria-controls="mobile-menu" aria-expanded="false" aria-label="Open menu" data-menu-toggle>
+        <span class="material-symbols-outlined" aria-hidden="true" data-menu-icon>menu</span>
+      </button>
+    </div>
+  </div>
+  <nav class="mobile-menu lg:hidden border-t border-primary-container/10 bg-surface-container-low" id="mobile-menu" aria-label="Mobile" hidden>
+    <ul class="flex flex-col px-margin-mobile md:px-gutter py-space-sm">
+{{navMobile}}
+      <li class="pt-space-sm pb-space-xs sm:hidden"><a class="flex items-center justify-center gap-2 px-space-md py-3 bg-primary-container text-on-primary font-label-caps text-label-caps tracking-widest uppercase rounded" href="contact.html">Get in touch <span class="material-symbols-outlined text-sm" aria-hidden="true">north_east</span></a></li>
+    </ul>
+  </nav>
+</header>
