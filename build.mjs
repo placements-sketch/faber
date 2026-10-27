@@ -132,7 +132,8 @@ for (const m of allHtml.matchAll(/material-symbols-outlined[^"]*"[^>]*>\s*([a-z0
 const iconsHref = `https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=${[...icons].sort().join(',')}&display=block`;
 
 // CSS (Tailwind scans src/ for class names)
-execSync(`npx --no-install tailwindcss -c tailwind.config.js -i src/styles.css -o dist/assets/css/styles.css --minify`, { cwd: ROOT, stdio: 'inherit' });
+// Run the CLI through node directly — doesn't depend on node_modules/.bin having execute permission.
+execSync(`node node_modules/tailwindcss/lib/cli.js -c tailwind.config.js -i src/styles.css -o dist/assets/css/styles.css --minify`, { cwd: ROOT, stdio: 'inherit' });
 const css = read(path.join(DIST, 'assets/css/styles.css'));
 const cssHref = `assets/css/styles.css?v=${hash(css)}`;
 const jsHref = `assets/js/main.js?v=${hash(js)}`;
