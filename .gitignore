@@ -11,3 +11,11 @@ dist/
 .DS_Store
 Thumbs.db
 .vscode/
+
+*.tsbuildinfo
+.env
+.env.*
+!.env.example
+
+
+
